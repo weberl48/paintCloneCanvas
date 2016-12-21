@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paint</title>
+    <link rel="stylesheet" type="text/css" href="paint.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="paint.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css" />
+</head>
+
+<body>
+    <div class="file-bar">
+        <div class="undo disabled" title="undo">
+            <i class="fa fa-undo"></i>
+        </div>
+        <div class="redo disabled" title="redo">
+            <i class="fa fa-undo"></i>
+        </div>
+    </div>
+    <div class="tools">
+        <div class="colors">
+            <div class="tool-title">Colors</div>
+        </div>
+        <div class="button-container">
+            <div class="tool-title">Brush</div>
+            <div class="brush-button selected" data-size="1">
+                <div class="brush" style="width: 1px; height: 1px;"></div>
+            </div>
+            <div class="brush-button" data-size="3">
+                <div class="brush" style="width: 3px; height: 3px;"></div>
+            </div>
+            <div class="brush-button" data-size="6">
+                <div class="brush" style="width: 6px; height: 6px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <canvas width="600" height="500"></canvas>
+    </div>
+</body>
+
+</html>
